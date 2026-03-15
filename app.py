@@ -223,7 +223,7 @@ def postprocess_reply(text: str, fallback_state: str) -> str:
     if not re.search(r"[가-힣]", text):
         return get_fallback_reply(fallback_state)
 
-    return text[:40]
+    return text
 
 
 def init_state():
